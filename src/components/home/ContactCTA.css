@@ -1,0 +1,153 @@
+
+.contact-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 20px;
+  background: var(--color-primary);
+  color: var(--color-surface);
+  text-align: center;
+}
+
+.contact-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.contact-cta-eyebrow {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: var(--color-secondary-light);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.contact-cta h2 {
+  margin-bottom: 22px;
+  color: var(--color-surface);
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.contact-cta h2 span {
+  display: block;
+  color: var(--color-secondary-light);
+  font-style: italic;
+}
+
+.contact-cta-content > p {
+  max-width: 620px;
+  margin: 0 auto 35px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+.contact-cta-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-cta-primary,
+.contact-cta-secondary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 0 28px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background var(--transition-normal),
+    color var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.contact-cta-primary {
+  background: var(--color-secondary);
+  color: var(--color-primary-dark);
+}
+
+.contact-cta-primary:hover {
+  background: var(--color-secondary-light);
+  transform: translateY(-3px);
+}
+
+.contact-cta-primary span {
+  font-size: 1.2rem;
+}
+
+.contact-cta-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--color-surface);
+}
+
+.contact-cta-secondary:hover {
+  background: var(--color-surface);
+  color: var(--color-primary);
+  transform: translateY(-3px);
+}
+
+/* Decorative elements */
+.contact-cta-decoration {
+  position: absolute;
+  color: rgba(197, 164, 109, 0.15);
+  pointer-events: none;
+}
+
+.contact-cta-decoration-one {
+  top: 25px;
+  left: 8%;
+  font-size: 110px;
+}
+
+.contact-cta-decoration-two {
+  right: 9%;
+  bottom: 15px;
+  font-size: 140px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .contact-cta {
+    padding: 75px 20px;
+  }
+
+  .contact-cta-eyebrow {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+  }
+
+  .contact-cta-content > p {
+    font-size: 0.88rem;
+  }
+
+  .contact-cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-cta-primary,
+  .contact-cta-secondary {
+    width: 100%;
+  }
+
+  .contact-cta-decoration-one {
+    left: -20px;
+    font-size: 75px;
+  }
+
+  .contact-cta-decoration-two {
+    right: -15px;
+    font-size: 90px;
+  }
+}

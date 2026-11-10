@@ -1,0 +1,420 @@
+
+/* ==============================
+   ABOUT HERO
+============================== */
+
+.about-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 440px;
+  padding: 90px 20px;
+  overflow: hidden;
+  background: var(--color-background-alt);
+  text-align: center;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.about-hero-content > span,
+.about-bottom-cta > .container > span {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--color-secondary-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.about-hero h1 {
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.about-hero h1 span {
+  display: block;
+  color: var(--color-secondary-dark);
+  font-style: italic;
+}
+
+.about-hero-content > p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+.about-hero-link,
+.about-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-secondary);
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about-hero-link span,
+.about-text-link span {
+  color: var(--color-secondary-dark);
+  font-size: 1.2rem;
+}
+
+.about-hero-decoration {
+  position: absolute;
+  top: 25px;
+  right: 10%;
+  color: rgba(197, 164, 109, 0.15);
+  font-size: 150px;
+  pointer-events: none;
+}
+
+/* ==============================
+   SHARED ABOUT STYLES
+============================== */
+
+.about-eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--color-secondary-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.about-story-content h2,
+.about-section-heading h2,
+.about-why-heading h2 {
+  margin-bottom: 22px;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: clamp(2.3rem, 4vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.about-story-content h2 span,
+.about-section-heading h2 span,
+.about-why-heading h2 span {
+  display: block;
+  color: var(--color-secondary-dark);
+  font-style: italic;
+}
+
+/* ==============================
+   OUR STORY
+============================== */
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+  gap: 75px;
+  align-items: center;
+}
+
+.about-story-image {
+  position: relative;
+  padding: 0 25px 25px 0;
+}
+
+.about-story-image::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 75%;
+  height: 75%;
+  border: 1px solid var(--color-secondary);
+  content: "";
+}
+
+.about-story-image img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.about-image-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 15px 20px;
+  background: var(--color-primary);
+  color: var(--color-secondary-light);
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+}
+
+.about-story-content > p,
+.about-why-heading > p {
+  margin-bottom: 18px;
+  color: var(--color-text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.9;
+}
+
+.about-story-content .about-text-link {
+  margin-top: 12px;
+}
+
+/* ==============================
+   OUR VALUES
+============================== */
+
+.about-values {
+  background: var(--color-background-alt);
+}
+
+.about-section-heading {
+  max-width: 650px;
+  margin: 0 auto 55px;
+  padding-top: 2%;
+  text-align: center;
+}
+
+.about-section-heading > p {
+  color: var(--color-text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+.about-values-grid {
+  display: grid;
+  padding: 2%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.about-value-card {
+  padding: 32px 25px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-warm);
+  transition:
+    transform var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.about-value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.about-value-number {
+  color: var(--color-secondary-dark);
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+}
+
+.about-value-line {
+  width: 45px;
+  height: 1px;
+  margin: 20px 0;
+  background: var(--color-secondary);
+}
+
+.about-value-card h3 {
+  margin-bottom: 12px;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.about-value-card p {
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+/* ==============================
+   WHY CHOOSE US
+============================== */
+
+.about-why-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  padding: 5% 4%;
+  align-items: center;
+}
+
+.about-why-heading .about-text-link {
+  margin-top: 12px;
+}
+
+.about-why-list {
+  border-top: 1px solid var(--color-border);
+}
+
+.about-why-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 23px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-why-item > span:first-child {
+  color: var(--color-secondary-dark);
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+}
+
+.about-why-item p {
+  flex: 1;
+  color: var(--color-primary);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.about-check {
+  color: var(--color-secondary-dark);
+  font-size: 1.1rem;
+}
+
+/* ==============================
+   BOTTOM CTA
+============================== */
+
+.about-bottom-cta {
+    padding: 85px 20px;
+    background: var(--color-primary);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-bottom-cta > .container {
+  max-width: 750px;
+}
+
+.about-bottom-cta h2 {
+  margin-bottom: 20px;
+  color: var(--color-surface);
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4vw, 3.7rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.about-bottom-cta h2 span {
+  display: block;
+  color: var(--color-secondary-light);
+  font-style: italic;
+}
+
+.about-bottom-cta p {
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+.about-bottom-cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 25px;
+  background: var(--color-secondary);
+  color: var(--color-primary-dark);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background var(--transition-normal);
+}
+
+.about-bottom-cta a:hover {
+  background: var(--color-secondary-light);
+}
+
+.about-bottom-cta a span {
+  font-size: 1.2rem;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 992px) {
+  .about-story-grid {
+    gap: 45px;
+  }
+
+  .about-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-why-grid {
+    gap: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    min-height: 380px;
+  }
+
+  .about-story-grid,
+  .about-why-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-story-image {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .about-why-grid {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-hero {
+    padding: 75px 20px;
+  }
+
+  .about-hero-decoration {
+    right: -20px;
+    font-size: 100px;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-value-card {
+    padding: 25px;
+  }
+
+  .about-why-item {
+    gap: 12px;
+  }
+
+  .about-why-item p {
+    font-size: 0.85rem;
+  }
+
+  .about-bottom-cta {
+    padding: 70px 20px;
+  }
+}

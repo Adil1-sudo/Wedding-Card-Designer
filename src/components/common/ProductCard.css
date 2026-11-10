@@ -1,0 +1,126 @@
+
+.product-card {
+  min-width: 0;
+  background: var(--color-surface);
+}
+
+.product-image-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-image-wrapper {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  background: var(--color-background-alt);
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-view-label {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  background: rgb(42 33 28 / 75%);
+  color: white;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.product-card:hover .product-view-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px;
+  /* border-bottom: 1px solid var(--color-border); */
+}
+
+.product-category {
+  color: var(--color-secondary-dark);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.product-card-info h3 {
+  margin: 8px 0;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.product-price {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: 12px;
+}
+
+.product-price strong {
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
+.product-details-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.product-details-link:hover {
+  color: var(--color-secondary-dark);
+}
+
+@media (max-width: 600px) {
+  .product-image-wrapper {
+    height: 300px;
+  }
+
+  .product-view-label {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-image,
+  .product-view-label {
+    transition: none;
+  }
+}

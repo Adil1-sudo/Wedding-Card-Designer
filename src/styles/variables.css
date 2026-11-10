@@ -1,0 +1,337 @@
+
+/* ==========================================
+   WEDDING INVITATION WEBSITE
+   GLOBAL DESIGN VARIABLES
+   File: src/styles/variables.css
+========================================== */
+
+
+/* ==========================================
+   1. COLOR SYSTEM
+========================================== */
+
+:root {
+
+  /* Primary Brand Colors */
+  --color-primary: #3D3029;
+  --color-primary-dark: #2A211C;
+  --color-primary-light: #5B493E;
+
+  /* Secondary Colors */
+  --color-secondary: #C5A46D;
+  --color-secondary-dark: #A98750;
+  --color-secondary-light: #DFCAA5;
+
+  /* Background Colors */
+  --color-background: #F8F5EF;
+  --color-background-alt: #F0EAE0;
+  --color-surface: #FFFFFF;
+  --color-surface-warm: #FDFBF7;
+
+  /* Text Colors */
+  --color-text: #3D3029;
+  --color-text-secondary: #74675D;
+  --color-text-muted: #95877B;
+  --color-text-light: #FFFFFF;
+
+  /* Border Colors */
+  --color-border: #E7DFD3;
+  --color-border-dark: #D5C8B7;
+
+  /* Feedback Colors */
+  --color-success: #47785B;
+  --color-error: #B94B45;
+  --color-warning: #B58A42;
+  --color-info: #52758A;
+
+  /* Overlay */
+  --color-overlay: rgba(42, 33, 28, 0.55);
+
+
+  /* ==========================================
+     2. TYPOGRAPHY
+  ========================================== */
+
+  /* Font Families */
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Lato", sans-serif;
+  --font-accent: "Cormorant Garamond", serif;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3rem;
+  --font-size-5xl: 3.75rem;
+
+  /* Responsive Heading Sizes */
+  --heading-hero: clamp(2.8rem, 6vw, 5.5rem);
+  --heading-section: clamp(2rem, 4vw, 3.5rem);
+  --heading-subsection: clamp(1.5rem, 3vw, 2.25rem);
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.1;
+  --line-height-heading: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.04em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.08em;
+  --letter-spacing-wider: 0.14em;
+
+
+  /* ==========================================
+     3. SPACING SYSTEM
+  ========================================== */
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Section Spacing */
+  --section-padding-y: clamp(4rem, 8vw, 7rem);
+  --section-padding-x: clamp(1rem, 5vw, 5rem);
+
+  /* Container Width */
+  --container-width: 1280px;
+  --container-narrow: 850px;
+
+
+  /* ==========================================
+     4. BORDER RADIUS
+  ========================================== */
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+
+  /* ==========================================
+     5. SHADOWS
+  ========================================== */
+
+  --shadow-xs:
+    0 2px 6px rgba(61, 48, 41, 0.04);
+
+  --shadow-sm:
+    0 4px 12px rgba(61, 48, 41, 0.06);
+
+  --shadow-md:
+    0 8px 24px rgba(61, 48, 41, 0.08);
+
+  --shadow-lg:
+    0 16px 40px rgba(61, 48, 41, 0.12);
+
+  --shadow-card:
+    0 6px 24px rgba(61, 48, 41, 0.06);
+
+
+  /* ==========================================
+     6. TRANSITIONS & ANIMATIONS
+  ========================================== */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  --transition-transform:
+    transform 300ms ease;
+
+  --transition-all:
+    all 250ms ease;
+
+
+  /* ==========================================
+     7. BUTTON SYSTEM
+  ========================================== */
+
+  --button-height: 48px;
+  --button-height-sm: 40px;
+  --button-height-lg: 56px;
+
+  --button-padding-x: 1.75rem;
+
+  --button-radius: var(--radius-sm);
+
+
+  /* ==========================================
+     8. INPUT SYSTEM
+  ========================================== */
+
+  --input-height: 50px;
+  --input-padding-x: 1rem;
+
+  --input-background: #FFFFFF;
+  --input-border: var(--color-border);
+  --input-focus-border: var(--color-secondary);
+
+  --input-radius: var(--radius-sm);
+
+
+  /* ==========================================
+     9. LAYOUT
+  ========================================== */
+
+  --header-height: 85px;
+  --header-height-mobile: 70px;
+
+  --content-width: var(--container-width);
+
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-header: 300;
+  --z-overlay: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+
+
+  /* ==========================================
+     10. IMAGE & CARD SYSTEM
+  ========================================== */
+
+  --card-background: var(--color-surface);
+  --card-border: var(--color-border);
+  --card-radius: var(--radius-lg);
+  --card-shadow: var(--shadow-card);
+
+  --image-radius: var(--radius-md);
+
+}
+
+
+/* ==========================================
+   11. GLOBAL BASE STYLING
+========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+
+  color: var(--color-text);
+  background-color: var(--color-background);
+
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-heading);
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: var(--heading-hero);
+}
+
+h2 {
+  font-size: var(--heading-section);
+}
+
+h3 {
+  font-size: var(--heading-subsection);
+}
+
+p {
+  line-height: var(--line-height-normal);
+  color: var(--color-text-secondary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+
+/* ==========================================
+   12. RESPONSIVE ADJUSTMENTS
+========================================== */
+
+@media (max-width: 768px) {
+
+  :root {
+    --header-height: var(--header-height-mobile);
+
+    --section-padding-y: 4rem;
+    --section-padding-x: 1.25rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  :root {
+    --section-padding-y: 3.5rem;
+    --section-padding-x: 1rem;
+
+    --font-size-base: 0.9375rem;
+  }
+
+}

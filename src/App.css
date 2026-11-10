@@ -1,0 +1,78 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.page-placeholder {
+  min-height: 100vh;
+  padding: 60px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--color-background);
+}
+
+.placeholder-label {
+  margin-bottom: 18px;
+  color: var(--color-secondary-dark);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.page-placeholder h1 {
+  margin: 0 0 16px;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: clamp(40px, 6vw, 64px);
+  font-weight: 600;
+}
+
+.page-placeholder p {
+  max-width: 550px;
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.development-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 35px;
+}
+
+.development-nav a,
+.placeholder-link {
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.development-nav a:hover,
+.placeholder-link:hover {
+  color: var(--color-secondary-dark);
+}
+
+.placeholder-link {
+  margin-top: 28px;
+}
+
+@media (max-width: 600px) {
+  .page-placeholder {
+    padding: 40px 18px;
+  }
+
+  .development-nav {
+    gap: 16px;
+  }
+}
